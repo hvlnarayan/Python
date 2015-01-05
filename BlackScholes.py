@@ -4,7 +4,8 @@ def bs_call(S,X,T,r,sigma):
     """
     calculates the european call option using the Black-Scholes formula
     where S= stock price; X= strike price; T in years; r in continuous rate;
-    sigma is volatility(pass as value between 0 and 1) 
+    sigma is volatility(pass as value between 0 and 1)
+    5th january 2015, Hanumantha Vajjhala Lakshminarayan
     """
     d1 = (log(S/X)+(r+sigma*sigma/2.)*T)/(sigma*sqrt(T))
     d2 = d1-sigma*sqrt(T)
